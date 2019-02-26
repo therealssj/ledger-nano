@@ -13,6 +13,9 @@ bipp32_path = ( # example of bip32 path
     )
 
 
+
+
+
 dongle = getDongle(True)
 
 publicKey = dongle.exchange(
