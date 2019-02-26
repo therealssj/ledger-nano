@@ -48,7 +48,7 @@ install:
     sudo apt-get install gcc-multilib g++-multilib;
     fi
 
-  - pip install --user Pillow
+  - sudo pip install --user Pillow
 
 script:
     - ls
