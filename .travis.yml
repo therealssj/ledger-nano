@@ -1,4 +1,7 @@
 language: c
+language: python
+python:
+  - "2.7"
 
 os:
     - linux
@@ -45,7 +48,7 @@ install:
     sudo apt-get install gcc-multilib g++-multilib;
     fi
 
-  - pip install Pillow
+  - pip install --user -U Pillow
 
 script:
     - ls
