@@ -53,8 +53,8 @@ install:
 script:
     - ls
     - pwd
-    - make all # test if project compiles
-    - make clean
+    - sudo make all # test if project compiles
+    - sudo make clean
 
 #    - make install-linters
 #    - make lint # Check code quality
