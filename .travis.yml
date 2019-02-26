@@ -45,12 +45,15 @@ install:
     sudo apt-get install gcc-multilib g++-multilib;
     fi
 
-  - make install-linters
-
 script:
-    - make lint # Check code quality
+    - ls
+    - pwd
     - make all # test if project compiles
     - make clean
+
+#    - make install-linters
+#    - make lint # Check code quality
+
 
 after_success:
     - ccache --show-stats
