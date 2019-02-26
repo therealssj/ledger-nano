@@ -45,16 +45,16 @@ before_install:
 
 install:
   - if [[ "$TRAVIS_OS_NAME" == 'linux' ]]; then
-    sudo apt-get install gcc-multilib g++-multilib;
+    apt-get install gcc-multilib g++-multilib;
     fi
 
-  - pip install pillow
+  - pip install --user Pillow
 
 script:
     - ls
     - pwd
-    - sudo make all # test if project compiles
-    - sudo make clean
+    - make all # test if project compiles
+    - make clean
 
 #    - make install-linters
 #    - make lint # Check code quality
